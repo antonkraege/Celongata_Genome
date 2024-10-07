@@ -35,3 +35,5 @@ blastn -query ../../genome-manual2/Cm_478-11_final_genome_m_21.fasta -db /DATA_R
 ./blobtools plot -o genus -r genus --colours colorfile.csv --format pdf -i /DATA_RAID2/akraege/Hanna_Genome_Assembly/Cm-478-11/Blobplot/run4/test212.blobDB.json
 
 #KAT-plot to check completeness of the assembly and retrieve ploidy information
+kat comp -t 80 -o kat-comp-main ../Cm_478-11_final_genome_m_21 /DATA_RAID/echavarr/data/Cm_478-11_PacBio/m64093_220530_102118.hifi_reads.fastq.gz /DATA_RAID2/akraege/Hanna_Genome_Assembly/Cm-478-11/genome-manual2/Cm_478-11_final_genome_m_21.fasta
+kat plot spectra-cn -x 800 -o beautiful_kmer_plot.svg kat-comp-main.mx
