@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 #Mapping of RNAseq reads to the final genome assembly
 hisat2-build -p 80 Cm-478-11_final_PacBio_genome.m.fasta Cm-478-11_hisat2-index
