@@ -12,3 +12,10 @@ busco -i ../Braker2/braker/braker_aa.fasta -o Cm-478-11_final_Pacbio-m -l chloro
 
 #annotation of secreated proteins with signalp6
 signalp6 --mode slow-sequential --output_dir Signalp6/ --fastafile RNAseq/braker/Celongata/braker.aa
+
+#Annotation of repeats with repeat
+BuildDatabase -name Cm-genome-final /DATA_RAID2/akraege/Hanna_Genome_Assembly/Cm-478-11/genome-manual2/Cm_478-11_final_PacBio_genome_m.fasta
+RepeatModeler -database /DATA_RAID2/akraege/Hanna_Genome_Assembly/Cm-478-11/Reapeatmodeler/database/Cm-genome-final -pa 20
+reasonaTE -mode annotate -projectFolder workspace -projectName testProject -tool all
+TEclassTest.pl -o /DATA_RAID2/akraege/Hanna_Genome_Assembly/Cm-478-11/Reapeatmodeler/ Cm_478-11_final_PacBio_genome_m.fasta
+RepeatMasker -pa 20 -dir . -xsmall -gff -excln -lib /DATA_RAID2/akraege/Hanna_Genome_Assembly/Cm-478-11/Reapeatmodeler/database/Cm-genome-final-families.fa /DATA_RAID2/akraege/Hanna_Genome_Assembly/Cm-478-11/genome-manual2/Cm_478-11_final_PacBio_genome_m.fasta
