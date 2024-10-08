@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #Raven hybrid assembly 
-
 raven -t 90 m64093_220722_215755.hifi_reads.fastq.gz /DATA_RAID/echavarr/data/Celongata_478-15_PacBio/wtdbg2/Celongata_SAG216-3B_Nanoporereads.correctedReads.fasta.gz > Celongata_SAG216-3B_hybrid.fasta
 
 #juicer Assembly polishing using HiC reads 
