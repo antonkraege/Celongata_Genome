@@ -1,12 +1,12 @@
-#*Coccomyxa elongata* genome assembly and annotation scripts 
+# *Coccomyxa elongata* genome assembly and annotation scripts 
 =
 
 The scripts were used to assemble the *Coccomyxa elongata* genome form Pacbio Reads and ONT reads. The assembly was polished using HiC sequencing. The genome was annotated with RNA sequencing. 
 
-##Dependencies
+## Dependencies
 =
-##Assembly
-###Tool   Version 
+## Assembly
+### Tool   Version 
 Raven  v1.8.1 
 Juicer  v2.0 
 BWA  v0.7.17-r1188
@@ -20,8 +20,8 @@ Blobtools v1.1.1
 BLAST 2.13.0+
 Kmer Analysis Toolkit V2.4.2
 
-##Annotation
-###Tool Version
+## Annotation
+### Tool Version
 RepeatModeler v2.0.3
 TEclass v2.1.3
 RepeatMasker v4.1.2-p1
