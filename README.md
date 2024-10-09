@@ -4,7 +4,7 @@ The scripts were used to assemble the *Coccomyxa elongata* genome form Pacbio Re
 
 ## Dependencies
 ## Assembly
-#### [Raven](https://github.com/lbcb-sci/raven)  v1.8.1
+#### Raven  v1.8.1
 #### Juicer  v2.0
 #### BWA  v0.7.17-r1188
 #### 3d-dna v180922
@@ -19,14 +19,14 @@ The scripts were used to assemble the *Coccomyxa elongata* genome form Pacbio Re
 
 ## Annotation
 ### Tool Version
-RepeatModeler v2.0.3
-TEclass v2.1.3
-RepeatMasker v4.1.2-p1
-HiSat2 v2.2.1
-Braker v2.1.6
-Gffread v0.12.7
-SignalP v6.0
-BUSCO v5.3.2
-R v4.2.0
-Circilize v0.4.14
-InterProScan v5.61
+#### RepeatModeler v2.0.3
+#### TEclass v2.1.3
+#### RepeatMasker v4.1.2-p1
+#### HiSat2 v2.2.1
+#### Braker v2.1.6
+#### Gffread v0.12.7
+#### SignalP v6.0
+#### BUSCO v5.3.2
+#### R v4.2.0
+#### Circilize v0.4.14
+#### InterProScan v5.61
