@@ -5,21 +5,7 @@ library(dplyr)
 library(tidyr)
 circos.clear()
 #Create the sectors of the plot
-c('Chr1', 'Chr2', 'Chr3', 
-  'Chr4', 'Chr5', 'Chr6', 'Chr7',
-  'Chr8', 'Chr9', 'Chr10', 'Chr11', 'Chr12',
-  'Chr13', 'Chr14', 'Chr15', 'Chr16', 'Chr17',
-  'Chr18', 'Chr19', 'Chr20')
-c('Scaffold_1', 'Scaffold_2', 'Scaffold_3', 
-  'Scaffold_4', 'Scaffold_5', 'Scaffold_6', 'Scaffold_7',
-  'Scaffold_8', 'Scaffold_9', 'Scaffold_10', 'Scaffold_11', 'Scaffold_12',
-  'Scaffold_13', 'Scaffold_14', 'Scaffold_15', 'Scaffold_16', 'Scaffold_17',
-  'Scaffold_18', 'Scaffold_19', 't')
-c('Scaffold_1', 'Scaffold_2', 'Scaffold_3', 
-  'Scaffold_4', 'Scaffold_5', 'Scaffold_6', 'Scaffold_7',
-  'Scaffold_8', 'Scaffold_9', 'Scaffold_10', 'Scaffold_11', 'Scaffold_12',
-  'Scaffold_13', 'Scaffold_14', 'Scaffold_15', 'Scaffold_16', 'Scaffold_17',
-  'Scaffold_18', 'Scaffold_19', 't')
+
 chromosomes <- data.frame('chr'=c('HiC_scaffold_1', 'HiC_scaffold_2', 'HiC_scaffold_3', 
                                   'HiC_scaffold_4', 'HiC_scaffold_5', 'HiC_scaffold_6', 'HiC_scaffold_7',
                                   'HiC_scaffold_8', 'HiC_scaffold_9', 'HiC_scaffold_10', 'HiC_scaffold_11', 'HiC_scaffold_12',
@@ -40,7 +26,7 @@ gc <- read.csv('gc_sliding_window.gff', sep = '\t', header = TRUE, colClasses = 
 #column names
 colnames(gc) = c("chr","start","stop","cov")
 gc$cov=gc$cov*100
-#gc$cov=as.numeric(gc$cov)
+
 #Plot
 circos.track(factors=gc$chr, x=gc$start, y=gc$cov, panel.fun=function(x, y) {
   circos.lines(x, y, col="grey50", lwd=0.6)
@@ -59,7 +45,7 @@ colnames(genes) = c("chr","start","stop")
 #Plot the data on the track, giving a colour and a height
 circos.genomicDensity(genes, col = c("#23395d"), track.height = 0.15, bg.border=F)
 # #Visualizing genome coverage to determine centromere positions
-repeats <- read.csv('Repeatdensity2-mt.csv',sep =';',header=FALSE, colClasses = c(NA,NA,NA))
+repeats <- read.csv('Repeatdensity.csv',sep =';',header=FALSE, colClasses = c(NA,NA,NA))
 #Give column names that match what type of data it is
 colnames(repeats) = c("chr","start","stop")
 #Plot the data on the track, giving a colour and a height
