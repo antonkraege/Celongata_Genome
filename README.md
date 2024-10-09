@@ -18,7 +18,6 @@ The scripts were used to assemble the *Coccomyxa elongata* genome form Pacbio Re
 #### Kmer Analysis Toolkit V2.4.2
 
 ## Annotation
-### Tool Version
 #### RepeatModeler v2.0.3
 #### TEclass v2.1.3
 #### RepeatMasker v4.1.2-p1
