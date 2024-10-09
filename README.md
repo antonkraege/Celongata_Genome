@@ -5,17 +5,17 @@ The scripts were used to assemble the *Coccomyxa elongata* genome form Pacbio Re
 ## Dependencies
 ## Assembly
 #### [Raven](https://github.com/lbcb-sci/raven)  v1.8.1
-Juicer  v2.0
-BWA  v0.7.17-r1188
-3d-dna v180922
-Juicebox v1.11.08
-Minimap2 v2.24-r1122
-Samtools v1.10
-Integrative Genome Viewer v2.11.2 
-Tapestry v1.0.0
-Blobtools v1.1.1
-BLAST 2.13.0+
-Kmer Analysis Toolkit V2.4.2
+#### Juicer  v2.0
+#### BWA  v0.7.17-r1188
+#### 3d-dna v180922
+#### Juicebox v1.11.08
+#### Minimap2 v2.24-r1122
+#### Samtools v1.10
+#### Integrative Genome Viewer v2.11.2 
+#### Tapestry v1.0.0
+#### Blobtools v1.1.1
+#### BLAST 2.13.0+
+#### Kmer Analysis Toolkit V2.4.2
 
 ## Annotation
 ### Tool Version
