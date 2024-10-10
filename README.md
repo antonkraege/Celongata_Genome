@@ -4,7 +4,7 @@ The scripts were used to assemble the *Coccomyxa elongata* genome form Pacbio Re
 
 ## Dependencies
 ## Assembly
-#### Raven  v1.8.1
+##### Raven  v1.8.1
 #### Juicer  v2.0
 #### BWA  v0.7.17-r1188
 #### 3d-dna v180922
